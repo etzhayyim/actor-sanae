@@ -1,4 +1,4 @@
-{:did        "did:web:etzhayyim.github.io:com-etzhayyim-sanae"
+{:did        "did:web:etzhayyim.com:actor:sanae"
  :handle     "sanae.etzhayyim.com"
  :ipns-key   "sanae-actor"
  :graph-type "com.etzhayyim.sanae.graph"
