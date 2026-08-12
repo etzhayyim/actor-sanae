@@ -1,5 +1,12 @@
 # sanae 早苗 — field-agriculture robotics
 
+Canonical repository: `etzhayyim/actor-sanae`. Sanae is the bounded
+field-agriculture robotics organ of the Tamaki-centered Etzhayyim artificial
+organism. It remains design-only: Tamaki retains organism authority, and live
+robotic actuation remains behind the manifest's human, witness, and
+displacement-dividend gates. The former `com-etzhayyim-sanae` name remains a
+compatibility redirect.
+
 > *早苗* = rice seedlings ready for transplanting. The first robotics actor of the labour-liberation
 > wave, freeing the largest pool of human toil on Earth: field agriculture.
 
