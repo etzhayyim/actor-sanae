@@ -13,14 +13,14 @@
   and never appear in the worklist. Pure (file I/O — the roster probe — only behind #?(:clj …));
   the LPS seed is `:representative` (G8), so this is the SHAPE of the priority, not a sourced plan."
   (:require [sanae.methods.labor-liberation :as ll]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             #?(:clj [clojure.java.io :as io])))
 
 (defn sector-slug
   "The actor slug a sector :name maps to — its first whitespace-delimited token, lower-cased.
   'hofuri (meat processing)' → \"hofuri\"; 'MINING (excluded N1)' → \"mining\"."
   [g]
-  (-> (:name g) (str/split #"\s+") first str/lower-case))
+  (-> (:name g) (str/split #"\s+") first str/lower))
 
 #?(:clj
    (defn actor-exists?
