@@ -12,7 +12,7 @@
     - displacement cohort size is rounded correctly
     - higher misery raises the score all else equal"
   (:require [clojure.test :refer [deftest is]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [sanae.methods.labor-liberation :as ll]))
 
 (deftest test-n1-excluded-sector-scores-zero

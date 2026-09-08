@@ -16,7 +16,7 @@
   Everything is order-of-magnitude and `:representative` (G8). The point is the SHAPE
   of the priority, not a sourced dataset; R2 replaces the seed with measured ISCO-occupation
   gap data."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (defn lps
   "Liberation Priority Score = log10(headcount) × misery × automatability × charter-fit × coverage-gap.
