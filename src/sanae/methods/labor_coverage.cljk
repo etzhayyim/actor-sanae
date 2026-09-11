@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; sanae 早苗 — labor-liberation BUILD-PRIORITY coverage (which high-LPS toil still lacks an actor).
 (ns sanae.methods.labor-coverage
   "labor_coverage.cljc — the build-priority worklist for the labor-liberation OSS-robotics roster

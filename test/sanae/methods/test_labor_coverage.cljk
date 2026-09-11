@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; sanae 早苗 — labor-liberation build-priority coverage tests.
 ;; Run: bb test
 (ns sanae.methods.test-labor-coverage

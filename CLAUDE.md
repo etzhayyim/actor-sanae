@@ -34,8 +34,8 @@ throughput · N4 no industrial monoculture (>50 ha single-crop) · N5 no patente
 
 ## Build / test
 
-`bb test` runs the standalone CLJC suite. Run the coverage report with
-`bb -cp src -m sanae.methods.labor-coverage`.
+`kbb -M:test` runs the standalone CLJC suite. Run the coverage report with
+`kbb -cp src -m sanae.methods.labor-coverage`.
 
 `src/sanae/methods/labor_coverage.cljk` cross-references the LPS ranking against the flat actor repositories
 (`build-priority` / `coverage-gaps` / `coverage-report`) to surface the highest-priority toil
