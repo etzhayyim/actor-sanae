@@ -37,7 +37,7 @@ throughput · N4 no industrial monoculture (>50 ha single-crop) · N5 no patente
 `bb test` runs the standalone CLJC suite. Run the coverage report with
 `bb -cp src -m sanae.methods.labor-coverage`.
 
-`src/sanae/methods/labor_coverage.cljc` cross-references the LPS ranking against the flat actor repositories
+`src/sanae/methods/labor_coverage.cljk` cross-references the LPS ranking against the flat actor repositories
 (`build-priority` / `coverage-gaps` / `coverage-report`) to surface the highest-priority toil
 that still has **no liberating actor** — currently **hofuri (meat processing)** and **ama
 (fishing/aquaculture)**. Charter-excluded sectors (LPS 0, e.g. MINING N1) are never build targets.
