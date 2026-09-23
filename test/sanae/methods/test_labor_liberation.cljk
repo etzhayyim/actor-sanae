@@ -11,7 +11,7 @@
     - freed labour-hours scale linearly with the three inputs
     - displacement cohort size is rounded correctly
     - higher misery raises the score all else equal"
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [kotoba.lang.text :as str]
             [sanae.methods.labor-liberation :as ll]))
 
