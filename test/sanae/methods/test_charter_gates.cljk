@@ -23,7 +23,7 @@
   every assertion below is unchanged."
   (:require [clojure.test :refer [deftest is run-tests]]
             [clojure.set :as set]
-            [clojure.edn :as edn]))
+            [kotoba.lang.edn :as edn]))
 
 #?(:clj
    (do
