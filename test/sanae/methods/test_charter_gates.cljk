@@ -21,7 +21,7 @@
   top-level map is wrapped `[{:db/id -1 :lex.<name>/lexicon ... :lex.<name>/defs <pr-str blob>}]`.
   `lex` below reconstitutes the original bare-keyed map (defs unblobbed back to a nested map) so
   every assertion below is unchanged."
-  (:require [clojure.test :refer [deftest is run-tests]]
+  (:require [kotoba.test :refer [deftest is run-tests]]
             [clojure.set :as set]
             [kotoba.lang.edn :as edn]))
 

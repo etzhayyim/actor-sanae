@@ -3,7 +3,7 @@
 ;; Run: bb test
 (ns sanae.methods.test-labor-coverage
   (:require [sanae.methods.labor-coverage :as cov]
-            [clojure.test :refer [deftest is run-tests]]))
+            [kotoba.test :refer [deftest is run-tests]]))
 
 ;; Deterministic roster probe (a test fixture, not the live filesystem): the seven built
 ;; labor-liberation actors; hofuri + ama deliberately absent so the worklist is stable.
