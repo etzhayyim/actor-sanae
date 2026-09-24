@@ -22,7 +22,7 @@
   `lex` below reconstitutes the original bare-keyed map (defs unblobbed back to a nested map) so
   every assertion below is unchanged."
   (:require [kotoba.test :refer [deftest is run-tests]]
-            [clojure.set :as set]
+            [kotoba.lang.coll :as set]
             [kotoba.lang.edn :as edn]))
 
 #?(:clj
