@@ -14,7 +14,7 @@
   the LPS seed is `:representative` (G8), so this is the SHAPE of the priority, not a sourced plan."
   (:require [sanae.methods.labor-liberation :as ll]
             [kotoba.lang.text :as str]
-            #?(:clj [clojure.java.io :as io])))
+            #?(:clj [kotoba.io :as io])))
 
 (defn sector-slug
   "The actor slug a sector :name maps to — its first whitespace-delimited token, lower-cased.
@@ -26,7 +26,7 @@
    (defn actor-exists?
      "True when a flat sibling actor repository com-etzhayyim-<slug> exists."
      [slug]
-     (.isDirectory (io/file ".." (str "com-etzhayyim-" slug)))))
+     (io/directory? (io/file ".." (str "com-etzhayyim-" slug)))))
 
 (defn build-priority
   "Every labor-liberation seed sector annotated with {:slug :lps :has-actor}, sorted by LPS
