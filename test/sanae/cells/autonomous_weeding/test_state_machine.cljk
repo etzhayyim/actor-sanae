@@ -2,7 +2,7 @@
   "State-machine tests for the sanae 早苗 autonomous_weeding cell (R0).
   Native CLJC state-machine suite (ADR-2606032100). G9 herbicide-free + G3 witness quorum;
   .solve() raises at R0."
-  (:require [kotoba.test :refer [deftest is]]
+  (:require [kotoba.lang.error :as kerror] [kotoba.test :refer [deftest is]]
             [sanae.cells.autonomous-weeding.state-machine :as sm]))
 
 (defn- run
@@ -23,7 +23,7 @@
     (is (<= (get rec "weedsCleared") (get rec "weedsDetected")))))
 
 (deftest test-g9-rejects-herbicide-method
-  (is (thrown-with-msg? clojure.lang.ExceptionInfo #"G9 violation" (run :method "glyphosate"))))
+  (is (thrown-with-msg? kerror/ExceptionInfo #"G9 violation" (run :method "glyphosate"))))
 
 (deftest test-laser-method-allowed
   (let [cs (get (run :method "laser") "cell_state")]
@@ -39,4 +39,4 @@
                        ["cell_state" "payload" "weeding_pass_record" "witnessQuorumMet"]))))
 
 (deftest test-solve-raises-at-r0
-  (is (thrown-with-msg? clojure.lang.ExceptionInfo #"R0 scaffold" (sm/solve {}))))
+  (is (thrown-with-msg? kerror/ExceptionInfo #"R0 scaffold" (sm/solve {}))))
